@@ -3,6 +3,11 @@
 	<title>Look! I'm CRUDding</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<!--<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">-->
+	<link href="../css/pikaday.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="../js/moment.min.js"></script>
 	<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="../css/estilo.css" rel="stylesheet" media="screen">
 </head>
@@ -145,6 +150,11 @@
 	</div>
 </section>
 
-
+<script src="../js/bootstrap.js"></script>
+	<script src="../js/moment-with-langs.js"></script>
+	<script src="../js/pikaday.js"></script>
+	<script>
+    var picker = new Pikaday({ field: document.getElementById('datepicker') });
+	</script>
 </body>
 </html>

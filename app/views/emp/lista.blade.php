@@ -23,7 +23,9 @@
  			<article class="col-md-3 ">
  					<h3 class="text-primary">Empresa:{{$value->nombre_empresa}}</h3>
  					<strong><script>  var fecha3 = moment('{{$value->fecha_ingreso}}').fromNow();
-		 				document.write( 'Antiguedad: ' + fecha3);</script></strong>
+		 				document.write( 'Antiguedad: ' + fecha3);
+		 			
+		 			</script></strong>
  					<hr>
  					<address>
 					  		<strong>{{$value->nombre_empresa}}</strong><br>
@@ -32,7 +34,7 @@
 					  		
 					</address>
 					<a href="{{URL::to('veremp/' . $value->id)}}" class="btn small btn-success btn-sm"> Ver</a>
-					<a href="{{URL::to('editaremp/' . $value->id )}}" class="btn small btn-info"> Editar</a>
+					<a href="{{URL::to('editaremp/' . $value->id )}}" class="btn small btn-info btn-sm"> Editar</a>
 					{{Form::open(array('url'=>'empresa/'. $value->id, 'class'=>''))}}
 						{{Form::hidden('_method', 'DELETE')}}
 						{{Form::submit('eliminar', array('class'=>'btn small btn-warning  btn-sm'))}}
